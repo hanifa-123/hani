@@ -1,0 +1,82 @@
+1.Write a Python program to find area of a circle using math function.
+import math
+r = float(input("Enter the radius of the circle: "))
+area = math.pi* r * r
+print(area)
+
+2.Write a program to find Area of Regular Polygon using math function.
+from math import tan,pi
+n = int(input("Input number of sides: "))
+length = float(input("Input the length of a side: "))
+area = n * (length**2) / (4 * tan(pi / n))
+print("The area of the polygon is: ",area)
+
+3.Write a program to find Area of a Segment of a Circle Formula using math function.
+import math
+def segmentarea(r,angle):
+    areaofsector = pi * (r * r) * (angle / 360) 
+    areaoftriangle = 1 / 2 *(r * r) *math.sin((angle * pi) / 180) 
+  
+    return areaofsector - areaoftriangle; 
+r=int(input("enter the radius"))
+angle=int(input("enter the angle"))
+print("area of minor segment=",segmentarea(r,angle))
+print("area of major segment=",segmentarea(r,(360-angle)))
+
+4.Write a python program to shuffle list l1=[100,1,2,3,30,40,hai,hello].
+from random import shuffle
+l1 = [100,1,2,3,30,40,"hai","hello"]
+shuffle(l1)
+print(l1)
+
+4.Write a program to generate random numbers between 1,10000 and difference between each random number is 50.
+import random
+n = random.randint(1,1000)
+print(n)
+while(n<1000):
+    n=n+50
+    print(n)
+
+5.Write a python program by using math module to find
+
+a.sin 60
+import math
+sine=math.sin(60)
+print(sine)
+
+b.cos(pi)
+import math
+co=math.cos(pi)
+print(co)
+
+c.tan(90)
+import math
+ta=math.tan(90)
+print(ta)
+
+d.angle of sin(0.8660254037844386)
+import math
+print(math.sin((0.86602540378443860009)))
+
+e.5^8
+print(5**8)
+
+f.Square root of 400
+print(400**0.5)
+
+g.The value of 5^e
+import math
+print(5*(math.e))
+
+h.The value of Log(1024), base 2
+import math
+print(math.log2(1024))
+
+i.The value of Log(1024), base 10
+import math
+print(math.log10(1024))
+
+j.The Floor and Ceiling value of 23.56
+import math
+print(math.floor(23.56))
+print(math.ceil(23.56))
