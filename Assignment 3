@@ -1,0 +1,51 @@
+1.Take two inputs and check whether they are equal or not
+a = input("Enter the first number: ")
+b = input("Enter the second number: ")
+if a == b:
+  print ("Both inputs are equal")
+else:
+  print (" input is not equal.")
+
+a = input("Enter the first number: ")
+b = input("Enter the second number: ")
+if a == b:
+  print ("Both inputs are equal")
+else:
+  print("input is not equal")
+#2.Take 3 inputs from user and check:all are equal
+any of two are not equal(use or or)
+num1=int(input("enter the first number"))
+num2=int(input("enter the second number"))
+num3=int(input("enter the third number"))
+all = num1 == num2 and num2 == num3 and num3 == num1
+print ("All are equal:",all)
+any = num1 == num2 or num2 == num3 or num3 == num1
+print ("Any of two are equal:",any)
+#3.Check whether the sum is greater than 5,less than 5 or
+equal to 5.
+a=int(input("enter a first number"))
+b=int(input("enter a second number"))
+sum = a+b
+print ("Sum is greater than 5:",sum>5)
+print ("Sum is equal to 5:",sum==5)
+print ("Sum is lesser than 5:",sum<5)
+#4.Suppose passing marks of a student is 35.Take two input of marks from user and check whether it is greatest than passing marks or not.
+pm = 35
+marks = int(input("enter the marks"))
+print ("Marks is greater than passing marks:", marks>pm)
+
+#5.Write a Python function to find the max of three numbers.
+def maximum(a, b, c): 
+  if(a > =b) and (a >= c):
+        largest = a 
+  
+    elif (b >= a) and (b >= c): 
+        largest = b 
+    else: 
+        largest = c 
+          
+    return largest   
+a = 10
+b = 14
+c = 12
+print(maximum(a, b, c))
